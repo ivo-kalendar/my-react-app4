@@ -1,12 +1,12 @@
 import React from 'react'
+import './App.css'
 
 function App() {
-  console.log(`...I am working in ${process.env.NODE_ENV} enviorment...`)
-
   return (
-  
     <div className="App">
-      Hello
+      <button>-</button>
+      <span>0</span>
+      <button>+</button>
     </div>
   )
 }
