@@ -1,14 +1,16 @@
 import React from 'react'
 import './App.css'
+import Counter from './Counter'
+import CounterHooks from './CounterHooks'
 
 function App() {
-  return (
-    <div className="App">
-      <button>-</button>
-      <span>0</span>
-      <button>+</button>
-    </div>
-  )
+	console.log('Render App...')
+	return (
+		<>
+			<Counter initialCount={0} />
+			<CounterHooks initialCount={0} />
+		</>
+	)
 }
 
 export default App
