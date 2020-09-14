@@ -12,9 +12,11 @@ export default class Counter extends Component {
 		console.log('Render Counter...')
 		return (
 			<div className='App'>
-		      <button onClick={() => this.changeCount(this.decrement())}>-</button>
-		      <span> {this.state.count} </span>
-		      <button onClick={() => this.changeCount(this.increment())}>+</button>
+				<span className="textMkd">Одземи Едно</span>
+		      	<button onClick={() => this.changeCount(this.decrement())}>-</button>
+		      	<span> {this.state.count} </span>
+		      	<button onClick={() => this.changeCount(this.increment())}>+</button>
+		      	<span className="textMkd">Додади Едно</span>
 			</div>
 		)
 	}
