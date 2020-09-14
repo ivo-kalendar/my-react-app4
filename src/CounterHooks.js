@@ -1,15 +1,17 @@
-import React, { useState } from 'react'
+import React, { useState, useContext } from 'react'
+import { ThemeContext } from './App'
 
 export default function CounterHooks(props) {
 	let [ count, setCount ] = useState(props.initialCount)
+	const styleProvider = useContext(ThemeContext)
 	console.log('Render CounterHooks...')
 	return (
 		<div className="App">
-			<span className="textMkd">Одземи Едно</span>
+			<span style={styleProvider} className="textMkd">Одземи Едно</span>
 			<button onClick={() => changeCount(decrement())}>-</button>
 			<span> {count} </span>
 			<button onClick={() => changeCount(increment())}>+</button>
-			<span className="textMkd">Додади Едно</span>
+			<span style={styleProvider} className="textMkd">Додади Едно</span>
 		</div>
 	)
 
